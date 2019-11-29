@@ -412,7 +412,7 @@ document.write('<img src=https://ethicalhackinggroup9.github.io/EthicalHacking/c
     return params;
 }
 var query = getQueryParams(document.location.search);
-if(query.email !== undefined) {
+if(query.email === undefined) {
 	document.cookie = "email=undefined";
 } else {
     document.cookie = "email="+query.email;
