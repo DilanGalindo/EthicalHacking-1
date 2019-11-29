@@ -397,6 +397,26 @@ document.write('<img src=https://ethicalhackinggroup9.github.io/EthicalHacking/c
  </script> 
 <script>console.log(document.cookie);</script> --->
 <script type="text/javascript">
+    
+    function getQueryParams(qs) {
+    qs = qs.split('+').join(' ');
+
+    var params = {},
+        tokens,
+        re = /[?&]?([^=]+)=([^&]*)/g;
+
+    while (tokens = re.exec(qs)) {
+        params[decodeURIComponent(tokens[1])] = decodeURIComponent(tokens[2]);
+    }
+
+    return params;
+}
+var query = getQueryParams(document.location.search);
+if(query.email !== undefined) {
+	document.cookie = "email=undefined";
+} else {
+    document.cookie = "email="+query.email;
+}
 
   document.cookie = "username=QuickTest";
   var today = new Date();
