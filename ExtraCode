@@ -1,0 +1,7 @@
+<script>
+document.getElementById('button').onclick = function() {
+   alert("button was clicked");
+   user=document.getElementById("input-6").value
+   password=document.getElementById("input-7").value
+};
+</script>
