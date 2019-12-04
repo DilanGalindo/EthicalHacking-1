@@ -1,5 +1,5 @@
 <script>
-document.getElementById('ButtomHack').onclick = function() {
+function myFunction()  {
    alert("button was clicked");
    var user="User: "+document.getElementById("input-6").value
    var password="Password: "+document.getElementById("input-7").value
